@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, HeroImage, Footer, WhyUsSection, Categories, Deals, Trending } from '../../components'
+import { Header, HeroImage, Footer, WhyUsSection, Categories, Deals, Section } from '../../components'
 
 import './home.css'
 
@@ -11,8 +11,8 @@ function HomePage(){
             <HeroImage />
             <WhyUsSection />
             <Categories />
-            <Deals />
-            <Trending />
+            <Section heading={"Today's Deals"}/>
+            <Section heading={"Treding Products"}/>
             <Footer />
             </div>
         </div>

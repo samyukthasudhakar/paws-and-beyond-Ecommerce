@@ -1,14 +1,14 @@
 import React from 'react';
 
-import '../deals/deals.css'
+import './section.css'
 import { ProductCard } from '../card/productCard/productCard';
 import { productsData } from '../../data/products'
 
-function Trending(){
+function Section(props){
     return (
         <div class="flex-column glass-container product-showcase">
             <div class="flex-column flex-center">
-                <h3>Trending Products</h3>
+                <h3>{props.heading}</h3>
                 <div class="flex-layout flex-wrap flex-center">
                 {
                     productsData.map( product => {
@@ -23,4 +23,4 @@ function Trending(){
     )
 }
 
-export { Trending }
+export { Section }

@@ -44,6 +44,8 @@
 
 .button-img{
     width:1.4rem;
+    vertical-align: baseline;
+    display: inline-block;
 }
 
 .text-button{
@@ -61,4 +63,15 @@
     padding:1rem;
     width:54rem;
     margin:1rem;    
+}
+
+.checkout-btn{
+    background-color: var(--primary-clr);
+    border:none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color:var(--clr-white);
+    font-size: medium;
+    padding:0.5rem;
+    width:100%;
 }
