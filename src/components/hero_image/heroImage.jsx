@@ -5,8 +5,8 @@ import './heroImage.css'
 
 function HeroImage() {
     return (
-        <div class="glass-container">
-            <img class="flex-center mg-1 banner-img" src={ heroImage }
+        <div className="glass-container">
+            <img className="flex-center mg-1 banner-img" src={ heroImage }
             alt="hero image" />
         </div>
     );

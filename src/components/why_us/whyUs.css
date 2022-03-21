@@ -1,22 +1,25 @@
 .why-us-container{
-    width:20rem;
+    width:50rem;
     padding:1rem;
-    border: solid black 1px;
 }
 
 .glass-bg, .category-container{
     padding:3px;
     margin:5px;
     width:3rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
     transition: all .5s ease;
 }
 
-.glass-bg:hover, .category-container:hover{
+.category-container{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.category-container:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     transform: translate3D(0,-1px,0) scale(1.03);
+    background-color: var(--secondary-clr);
 }
 
 .mg-3{
