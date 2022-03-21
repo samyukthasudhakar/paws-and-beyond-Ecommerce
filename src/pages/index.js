@@ -1,7 +1,9 @@
 import { CartPage } from './Cart/cart'
 import { HomePage } from './Home/home'
-import { ProductListing } from './ProductListing/productListing'
-import { WishListPage } from './WishList/wishList'
+import { Login } from './Login/login'
 import { PageNotFound } from './PageNotFound/404page'
+import { ProductListing } from './ProductListing/productListing'
+import { SignUp } from './SignUp/signUp'
+import { WishListPage } from './WishList/wishList'
 
-export { CartPage, HomePage, ProductListing, WishListPage, PageNotFound }
+export { CartPage, HomePage, Login, PageNotFound, ProductListing, SignUp, WishListPage }

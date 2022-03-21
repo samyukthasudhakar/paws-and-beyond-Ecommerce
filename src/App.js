@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import './styles/App.css';
-import { CartPage, HomePage, Login, ProductListing, WishListPage, PageNotFound } from './pages'
+import { CartPage, HomePage, Login, ProductListing, PageNotFound, SignUp, WishListPage } from './pages'
 
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
         <Route path="/products" element={<ProductListing />} />
         <Route path="/wishlist" element={<WishListPage />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div> 
