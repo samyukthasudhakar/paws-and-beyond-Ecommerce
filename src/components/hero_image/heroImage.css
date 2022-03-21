@@ -1,0 +1,15 @@
+.glass-container{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.banner-img{
+    border-radius:1rem;
+    width:50rem;
+}
+
+.mg-1{
+    margin:1rem;
+}

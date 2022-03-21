@@ -1,0 +1,21 @@
+:root{
+    /*color theme*/
+    --primary-clr:#5028c7;
+    --secondary-clr:#dde3fd;
+    --secondary-clr-2:#836FFF;
+    --teritiary-clr:#ffeae5;
+    --accent-clr:#fa0a32;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+mg-1{
+    margin: 1rem;
+}
+
+a:hover{
+    color: black;
+}

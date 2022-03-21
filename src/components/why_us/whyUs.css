@@ -1,0 +1,27 @@
+.why-us-container{
+    width:50rem;
+    padding:1rem;
+}
+
+.glass-bg, .category-container{
+    padding:3px;
+    margin:5px;
+    width:3rem;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+.category-container{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.category-container:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    transform: translate3D(0,-1px,0) scale(1.03);
+    background-color: var(--secondary-clr);
+}
+
+.mg-3{
+    margin: 3rem;
+}

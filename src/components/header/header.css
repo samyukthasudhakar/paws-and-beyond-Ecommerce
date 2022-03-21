@@ -1,0 +1,36 @@
+.header-container{
+    background-color:var(--primary-clr);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color:var(--clr-white);
+    height:5rem;
+    padding-bottom:2rem;
+}
+
+.p-b-logo{
+    margin-right:1rem;
+    width:3rem;
+}
+
+.txt-accent{
+    color:var(--accent-clr);
+    margin:0 4px;
+}
+
+.search-bar{
+    background-color:var(--secondary-clr);
+}
+
+.search-icon{
+    color:var(--clr-black);
+}
+
+.nav-pill{
+    border:0;
+    margin:0 3px;
+    padding:3px;
+}
+
+.nav-pill-img{
+    margin:2px 8px;
+    width:1.6rem;
+}
