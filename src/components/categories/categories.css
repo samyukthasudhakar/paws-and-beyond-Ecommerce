@@ -1,8 +1,9 @@
 .category-container{
-    width:8rem;
+    width:12rem;
+    margin: 0 4rem;
 }
 
 .category-img{
-    width:5rem;
+    width:6rem;
     margin:1rem;
 }

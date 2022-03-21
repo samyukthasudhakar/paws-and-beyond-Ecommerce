@@ -26,7 +26,7 @@
 }
 
 .card-badge{
-    background-color:var(--primary-clr);
+    background-color:var(--secondary-clr-2);
     color:var(--clr-white);
 }
 
@@ -66,7 +66,8 @@
 }
 
 .checkout-btn{
-    background-color: var(--primary-clr);
+    background-color: var(--secondary-clr-2);
+    color:var(--primary-clr);
     border:none;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
@@ -74,4 +75,8 @@
     font-size: medium;
     padding:0.5rem;
     width:100%;
+}
+.checkout-btn:hover{
+    background-color: var(--primary-clr);
+    color:var(--clr-white);
 }

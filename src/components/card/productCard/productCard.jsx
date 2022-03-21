@@ -22,7 +22,12 @@ function ProductCard ( {product} ){
                 </div>
             </div>
             <button className="checkout-btn" title="Add to Bag">
-                <span>Add to Bag</span><img className="button-img" src={ bag } alt="bag icon"/>
+            
+                <div className='flex-layout flex-center' style={{verticalAlign:'center'}}>
+                    <span style={{margin:'0 8px'}}>Add to Bag</span>
+                    <img className="button-img" src={ bag } alt="bag icon"/>
+                </div>
+                
             </button>
         </div>
     );

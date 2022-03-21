@@ -7,11 +7,11 @@ import { categories } from '../../data/categories'
 function Categories(){
     return (
         <div class="flex-column flex-center " style={{margin: '2rem'}}>
-            <h3 className="mg-tb-1">Categories</h3>
+            <h2 className="mg-tb-1">Categories</h2>
             <div className='flex-layout'>
                 {
                     categories.map( category => (
-                        <div className="category-container" style={{width: '8rem'}}>
+                        <div className="category-container" style={{width: '10rem'}}>
                             <Link to="/products" className="flex-column flex-center">
                                 <img className="category-img" src= {category.icon}
                                 alt="dog icon"/>

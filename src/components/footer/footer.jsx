@@ -5,7 +5,7 @@ import './footer.css'
 
 function Footer(){
     return(
-        <footer className="flex-column flex-center footer-container">
+        <footer className="flex-column flex-center footer-container" style={{width:'100%'}}>
             <div className="flex-space-btwn footer-links-container">
                 <div className="flex-column">
                     <span className="p-sm txt-bold">Get to Know Us</span>
