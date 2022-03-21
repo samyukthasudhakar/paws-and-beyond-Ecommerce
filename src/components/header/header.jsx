@@ -21,7 +21,7 @@ function Header(){
                 <Link to="/" className="nav-pill active-nav-pill" ><img className="nav-pill-img" src={ home } alt="home icon"/></Link>
                 <Link to="/wishlist" className="nav-pill" ><img className="nav-pill-img" src={ heart } alt="heart icon"/></Link>
                 <Link to="/cart" className="nav-pill" ><img className="nav-pill-img" src={ bag } alt="bag icon"/></Link>
-                <Link to="*" className="nav-pill" ><img className="nav-pill-img" src={ user } alt="user icon"/></Link>
+                <Link to="/login" className="nav-pill" ><img className="nav-pill-img" src={ user } alt="user icon"/></Link>
             </nav>
         </header>
     );

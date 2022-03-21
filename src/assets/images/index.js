@@ -4,5 +4,6 @@ import cat from './cat.png'
 import dog from './dog.png'
 import fish from './fish.png'
 import heroImage from './p&b_banner.png'
+import authBG from './auth-background.png'
 
-export { bird, bunny, cat, dog, fish, heroImage }
+export { bird, bunny, cat, dog, fish, heroImage, authBG }
