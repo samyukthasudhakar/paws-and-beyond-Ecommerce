@@ -18,9 +18,9 @@ function Login(){
                 <form className="flex-column glass-card login-form">
                     <div className="flex-column flex-center">
                         <h3 className='form-heading'>Login</h3>
-                        <Input type={"text"} placeholder={"Email"}/>
-                        <Input type={"password"} placeholder={"Password"}/>
-                        <div className="flex-layout w-100" style={{justifyContent:'space-between'}}>
+                        <Input type="text" placeholder="Email"/>
+                        <Input type="password" placeholder="Password"/>
+                        <div className="flex-layout space-between w-100">
                             <div className="flex-layout">
                                 <input type="checkbox"/> 
                                 <label className="fs-13px">Remember me</label>

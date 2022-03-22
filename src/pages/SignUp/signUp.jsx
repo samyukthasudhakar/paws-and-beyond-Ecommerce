@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 import { Header, Footer, Input } from '../../components';
 import { authBG } from '../../assets/images';
+import { useInputHandler } from '../../customHooks/inputHandler';
 
 import './signUp.css'
 
@@ -18,16 +20,15 @@ function SignUp(){
                 <form className="flex-column glass-card login-form">
                     <div className="flex-column flex-center">
                         <h3 className='form-heading'>SignUp</h3>
-                        <Input type={'text'} placeholder={'First Name'}/>
-                        <Input type={'text'} placeholder={'Last Name'}/>
-                        <Input type={'text'} placeholder={'Email'}/>
-                        <Input type={'text'} placeholder={'Password'}/>
-                        <div className="flex-layout width-100" style={{justifyContent:'space-between',width:'100%',verticalAlign:'center'}}>
+                        <Input type='text' name='firstName' placeholder='First Name'/>
+                        <Input type='text' name='lastName' placeholder='Last Name'/>
+                        <Input type='text' name='email' placeholder='Email'/>
+                        <Input type='password' name='password' placeholder='Password'/>
+                        <div className="flex-layout w-100 space-between">
                             <div className="flex-layout">
                                 <input type="checkbox"/> 
-                                <label className="fs-13px">Remember me</label>
-                            </div>
-                            <Link className="link-txt" to="*">Forgot Password ?</Link>    
+                                <label className="fs-13px">I agree to all the terms and conditions.</label>
+                            </div>   
                         </div>
                         <div className="mg-1 w-100">
                         <button className="auth-btn">SignUp</button>
