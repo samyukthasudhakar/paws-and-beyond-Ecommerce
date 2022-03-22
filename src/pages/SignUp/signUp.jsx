@@ -26,8 +26,8 @@ function SignUp(){
                         <Input type='password' name='password' placeholder='Password'/>
                         <div className="flex-layout w-100 space-between">
                             <div className="flex-layout">
-                                <input type="checkbox"/> 
-                                <label className="fs-13px">I agree to all the terms and conditions.</label>
+                                <input id='terms' type="checkbox"/> 
+                                <label for='terms' className="fs-13px">I agree to all the terms and conditions.</label>
                             </div>   
                         </div>
                         <div className="mg-1 w-100">

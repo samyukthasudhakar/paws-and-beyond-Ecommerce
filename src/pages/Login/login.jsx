@@ -22,8 +22,8 @@ function Login(){
                         <Input type="password" placeholder="Password"/>
                         <div className="flex-layout space-between w-100">
                             <div className="flex-layout">
-                                <input type="checkbox"/> 
-                                <label className="fs-13px">Remember me</label>
+                                <input id='remember-me' type="checkbox"/> 
+                                <label for='remember-me' className="fs-13px">Remember me</label>
                             </div>
                             <Link className="link-txt" to="*">Forgot Password ?</Link>    
                         </div>
