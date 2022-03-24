@@ -1,0 +1,24 @@
+.wishlist-parent{
+    margin:auto;
+    margin-top:3rem;
+    width:70rem;
+}
+
+.wishlist-heading{
+    border-bottom: solid var(--accent-clr) 2px;
+    color:var(--primary-clr);
+    margin: 1rem;
+}
+
+.browse-btn{
+    margin-left: 2rem;
+    width: auto;
+}
+
+.showcase-products{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60rem;
+    min-height: 30rem;
+
+}
