@@ -18,11 +18,12 @@
 }
 
 .product-title{
-    margin-left:0.87rem;
+    text-align: center;
+    font-weight: 450;
 }
 
 .product-pricing{
-    margin:0 1rem 1rem 1rem;
+    margin: 0.5rem 1rem 1rem 1rem;
 }
 
 .card-badge{
@@ -65,7 +66,7 @@
     margin:1rem;    
 }
 
-.checkout-btn{
+.addToCart-btn{
     background-color: var(--secondary-clr-2);
     color:var(--primary-clr);
     border:none;
@@ -77,7 +78,30 @@
     width:100%;
 }
 
-.checkout-btn:hover{
+.addToCart-btn:hover{
     background-color: var(--primary-clr);
     color:var(--clr-white);
+}
+
+.card-like{
+    background: transparent;
+    border:none;
+    color:var(--accent-clr);
+    width:2rem;
+    height:2rem;
+    font-size:1.25rem;
+    position:absolute;
+    right:4px;
+    top:4px;
+}
+
+.card-dismiss:hover, .card-cart:hover, .card-like:hover{
+    border:none;
+    border-radius:50%;
+    background-color: var(--teritiary-clr);
+
+}
+
+.card-product-price{
+    margin-right: 5px;
 }

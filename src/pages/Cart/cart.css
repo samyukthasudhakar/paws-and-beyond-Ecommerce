@@ -1,0 +1,37 @@
+.cart-bill{
+    position:sticky;
+    top:1rem;
+    width:20rem;
+    border-radius:1rem;
+    padding:1rem;
+    margin:1.5rem 3rem 1rem 0.5rem;
+    max-height:27rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 14px;
+}
+
+.cta-btn, .checkout-btn{
+    background-color: var(--primary-clr);
+    border:none;
+    border-radius: 0.5rem;
+    color:var(--clr-white);
+    font-size: medium;
+    margin:1rem 0;
+    padding:0.5rem;
+
+}
+
+.checkout-btn{
+    width:100%;
+}
+
+.coupon-container{
+    border-bottom: solid var(--secondary-clr) 3px;
+}
+
+.mg-rl-1{
+    margin:0 1rem;
+}
+
+.mg-tb-3{
+    margin: 5rem 0;
+}
