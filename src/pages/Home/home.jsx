@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, HeroImage, Footer, WhyUsSection, Categories, Deals, Section } from '../../components'
+import { Header, HeroImage, Footer, WhyUsSection, Categories, Section } from '../../components'
 
 import './home.css'
 
