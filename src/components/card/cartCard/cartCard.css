@@ -1,8 +1,7 @@
+
 .cart-heading{
-    border-bottom: solid var(--primary-clr) 2px;
     color:var(--accent-clr);
-    margin:1rem 3rem;
-    padding:1rem;
+    padding-top:1.3rem;
 }
 
 .cart-item-purple, .cart-item-pink{
@@ -37,6 +36,18 @@
     border:none;
     font-weight: bold;
     font-size:larger
+}
+
+.qty-value{
+    width:2rem;
+    height:2rem;
+    text-align: center;
+}
+
+.cart-total-price{
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
 }
 
 .cart-card-dismiss{
@@ -86,4 +97,13 @@
 .card-description{
     color: grey;
     font-weight: 600;
+}
+
+.moveToWishList{
+    background-color: var(--secondary-clr);
+    border:none;
+    border-radius: 0.5rem;
+    font-size: medium;
+    margin:1rem 0;
+    padding: 6px;
 }

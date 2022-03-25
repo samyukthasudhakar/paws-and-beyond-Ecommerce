@@ -1,7 +1,5 @@
 .wishlist-parent{
-    margin:auto;
-    margin-top:3rem;
-    width:70rem;
+    margin-bottom: 10rem;
 }
 
 .wishlist-heading{
@@ -19,6 +17,4 @@
     flex-wrap: wrap;
     justify-content: space-around;
     width: 60rem;
-    min-height: 30rem;
-
 }

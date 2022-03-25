@@ -6,7 +6,7 @@
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .product-image{
@@ -20,6 +20,7 @@
 .product-title{
     text-align: center;
     font-weight: 450;
+    margin: 0 2px;
 }
 
 .product-pricing{
@@ -66,7 +67,7 @@
     margin:1rem;    
 }
 
-.addToCart-btn{
+.addToCart-btn, .addedToCart-btn{
     background-color: var(--secondary-clr-2);
     color:var(--primary-clr);
     border:none;
@@ -78,7 +79,7 @@
     width:100%;
 }
 
-.addToCart-btn:hover{
+.addToCart-btn:hover,.addedToCart-btn{
     background-color: var(--primary-clr);
     color:var(--clr-white);
 }
@@ -93,6 +94,9 @@
     position:absolute;
     right:4px;
     top:4px;
+    border:none;
+    border-radius:50%;
+    background-color: var(--teritiary-clr);
 }
 
 .card-dismiss:hover, .card-cart:hover, .card-like:hover{
