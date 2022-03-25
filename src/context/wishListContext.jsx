@@ -1,17 +1,14 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useReducer } from 'react';
+import { WishListReducer } from '../../src/reducers/wishlistReducer';
 
 const wishListContext = createContext(null);
 
 function WishListProvider( { children } ){
 
-    const [ wishList, setWishList ] = useState([])
-
-    function addToWishList(product){
-        setWishList([...wishList,{...product, addedToWishList:true}])
-    }
+    const [ wishList, setWishList ] = useReducer( WishListReducer, [])
 
     return (
-        <wishListContext.Provider value={{ wishList, setWishList, addToWishList }}>
+        <wishListContext.Provider value={{ wishList, setWishList }}>
             { children }
         </wishListContext.Provider>
     )

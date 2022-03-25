@@ -7,15 +7,15 @@ import { useWishList } from '../../context'
 
 function WishListPage(){
 
-    const { wishList, addToWishList } = useWishList()
+    const { wishList } = useWishList()
     let productCount = wishList.length
 
     return(
         <div>
            <Header />
-           <div className='flex-column flex-center '>
+           <div className='flex-column flex-center wishlist-parent'>
            <p className='wishlist-heading p-lg'> My WishList {productCount!=0?(`( ${productCount} products )`):('')}</p>
-           <div class="flex-layout showcase-products">
+           <div class="flex-layout flex-start showcase-products">
             {
                 (productCount!=0) ? (
 
