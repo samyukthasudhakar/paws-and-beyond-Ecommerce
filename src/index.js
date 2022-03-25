@@ -6,12 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 import { makeServer } from "./server";
 
+import { WishListProvider, CartProvider } from './context'
+
 makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <CartProvider>
+        <WishListProvider>
+          <App />
+        </WishListProvider>
+      </CartProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

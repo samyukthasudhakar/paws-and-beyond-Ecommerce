@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import { Header, Footer, Input } from '../../components';
 import { authBG } from '../../assets/images';
-import { useInputHandler } from '../../customHooks/inputHandler';
+
 
 import './signUp.css'
 

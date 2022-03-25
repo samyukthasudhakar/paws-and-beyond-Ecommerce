@@ -1,0 +1,109 @@
+
+.cart-heading{
+    color:var(--accent-clr);
+    padding-top:1.3rem;
+}
+
+.cart-item-purple, .cart-item-pink{
+    background-color:var(--secondary-clr);
+    border-radius:1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin:1.5rem 0;
+    padding:1rem;
+    width:50rem;
+}
+
+.cart-item-pink{
+    background-color: var(--teritiary-clr);
+}
+
+.cart-item-img{
+    width:10rem;
+    height:10rem;
+    border-radius:1rem;
+}
+
+.card-offer-percent{
+    color:var(--primary-clr);
+}
+
+.qty-btn{
+    width:2rem;
+    height:2rem;
+    margin:5px;
+    background-color:var(--clr-white);
+    border-radius: 50%;
+    border:none;
+    font-weight: bold;
+    font-size:larger
+}
+
+.qty-value{
+    width:2rem;
+    height:2rem;
+    text-align: center;
+}
+
+.cart-total-price{
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+}
+
+.cart-card-dismiss{
+    background: transparent;
+    border:none;
+    width:2rem;
+    height:2rem;
+    font-size: medium;
+}
+
+.cart-card-dismiss:hover{
+    border:none;
+    border-radius:50%;
+    background-color: var(--secondary-clr);
+}
+
+.cart-bill{
+    position:sticky;
+    top:1rem;
+    width:22rem;
+    border-radius:1rem;
+    padding:1rem;
+    margin:1.5rem 3rem 1rem 0.5rem;
+    max-height:27rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 14px;
+}
+
+.cta-btn, .checkout-btn{
+    background-color: var(--primary-clr);
+    border:none;
+    border-radius: 0.5rem;
+    color:var(--clr-white);
+    font-size: medium;
+    margin:1rem 0;
+    padding:0.5rem;
+
+}
+
+.checkout-btn{
+    width:100%;
+}
+
+.coupon-container{
+    border-bottom: solid var(--secondary-clr) 3px;
+}
+
+.card-description{
+    color: grey;
+    font-weight: 600;
+}
+
+.moveToWishList{
+    background-color: var(--secondary-clr);
+    border:none;
+    border-radius: 0.5rem;
+    font-size: medium;
+    margin:1rem 0;
+    padding: 6px;
+}

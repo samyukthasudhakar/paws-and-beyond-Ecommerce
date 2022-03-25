@@ -34,3 +34,14 @@
     margin:2px 8px;
     width:1.6rem;
 }
+
+.count-badge{
+    width: 1.1rem;
+    height: 1.1rem;
+    top:-18px;
+    right:-16px;
+    background-color: var(--accent-clr);
+    color: var(--clr-white);
+    font-size: 11px;
+    text-align: center;
+}

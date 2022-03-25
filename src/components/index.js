@@ -5,6 +5,7 @@ import { HeroImage } from './hero_image/heroImage'
 import { Input } from './input/input'
 import { WhyUsSection } from './why_us/whyUs'
 import { ProductCard } from './card/productCard/productCard'
+import { CartCard } from './card/cartCard/cartCard'
 import { Section } from './section/section'
-
-export { Categories, Footer, Header, HeroImage, Input, WhyUsSection, ProductCard, Section }
+import { EmptySection } from './empty_section/emptySection'
+export { Categories, Footer, Header, HeroImage, Input, WhyUsSection, ProductCard, CartCard, Section, EmptySection }

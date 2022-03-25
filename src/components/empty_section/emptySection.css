@@ -1,0 +1,15 @@
+.empty-container{
+    width: 25rem;
+    margin: auto;
+}
+
+.empty-image{
+    width: 16rem;
+    height: 16rem;
+
+}
+
+.empty-heading{
+    color: grey;
+    margin: 1rem 0;
+}
