@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './cart.css'
 import { Header, Footer, CartCard, EmptySection } from '../../components'
