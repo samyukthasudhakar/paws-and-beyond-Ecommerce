@@ -9,27 +9,27 @@ import { bird, bunny, cat, dog, fish } from '../../../src/assets/images'
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "Dogs",
+    category: "Dogs",
     icon: dog
   },
   {
     _id: uuid(),
-    categoryName: "Cats",
+    category: "Cats",
     icon: cat
   },
   {
     _id: uuid(),
-    categoryName: "Birds",
+    category: "Birds",
     icon: bird
   },
   {
     _id: uuid(),
-    categoryName: "Fish",
+    category: "Fish",
     icon: fish
   },
   {
     _id: uuid(),
-    categoryName: "Bunny",
+    category: "Bunny",
     icon: bunny
   },
 ];
