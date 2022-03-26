@@ -7,7 +7,7 @@ import { useWishList, useCart } from '../../../context'
 
 
 function ProductCard ( { product } ){
-    const { badge, image, discount, name, price, addedToWishList } = product
+    const { badge, image, discount, name, price, rating } = product
 
     const { wishList ,setWishList } = useWishList()
     const { cartItems, setCartItems } = useCart()
@@ -30,7 +30,7 @@ function ProductCard ( { product } ){
             </button>
             <p className="product-title">{name}</p>
             <div className="product-pricing">
-                <div className="flex-space-btwn flex-center">
+                <div className="flex-space-btwn flex-center mg-t-1">
                     <div>
                     {
                         (discount!='') ? (
@@ -42,6 +42,9 @@ function ProductCard ( { product } ){
                             <span className="card-product-price">{`₹${price}`}</span>
                         )
                     }
+                    </div>
+                    <div>
+                        <span className='rating-badge'>{`${rating}⭐`}</span>
                     </div>
                 </div>
             </div>
