@@ -8,4 +8,18 @@ import { ProductCard } from './card/productCard/productCard'
 import { CartCard } from './card/cartCard/cartCard'
 import { Section } from './section/section'
 import { EmptySection } from './empty_section/emptySection'
-export { Categories, Footer, Header, HeroImage, Input, WhyUsSection, ProductCard, CartCard, Section, EmptySection }
+import { FilterSideBar } from './filterSideBar/filterSideBar'
+
+export { 
+    Categories, 
+    Footer, 
+    Header, 
+    HeroImage, 
+    Input, 
+    WhyUsSection, 
+    ProductCard, 
+    CartCard, 
+    Section,
+    EmptySection, 
+    FilterSideBar
+}
