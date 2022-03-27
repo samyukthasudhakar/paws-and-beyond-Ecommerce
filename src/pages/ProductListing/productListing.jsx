@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import { Header, Footer, ProductCard, FilterSideBar } from '../../components/'
 import { useProducts } from '../../context/productsContext'
 import { products as Products } from '../../backend/db/products'
-import getFilteredProducts from '../../utils/filterFunctions';
+import useScrollToTop from '../../utils/scrollToTop'
+import getFilteredProducts from '../../utils/filterFunctions'
 
 import './productListing.css'
 
@@ -14,9 +15,9 @@ function ProductListing(){
         productsDispatch({type:'GET_PRODUCTS',payload:Products})
     },[])
     
-    console.log('Products :', products)
+    useScrollToTop()
+
     const filteredProducts = getFilteredProducts( products, sortByPrice, categoryFilters, typeFilters, ratingFilter )
-    console.log('Filtered Products :', filteredProducts)
     return(
         <div>
           <Header />
