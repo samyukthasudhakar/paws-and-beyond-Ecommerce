@@ -22,13 +22,10 @@ function Categories(){
             <div className='flex-layout'>
                 {
                     categories.map( ({icon, category}) => (
-                        <div className="category-container" style={{width: '10rem'}} onClick={() => CategoryClickHandler(category)}>
+                        <div className="category-container flex-column flex-center" style={{width: '10rem'}} onClick={() => CategoryClickHandler(category)}>
                             <img className="category-img" src= {icon}
                                 alt="dog icon"/>
                                 <span className="txt-bold">{category}</span>
-                            {/* <Link to="/products" className="flex-column flex-center">
-                                
-                            </Link> */}
                         </div>
                     ))
                 }
