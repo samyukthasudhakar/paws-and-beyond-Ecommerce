@@ -109,3 +109,16 @@
 .card-product-price{
     margin-right: 5px;
 }
+
+.rating-badge{
+    border: none;
+    border-radius: 3px;
+    background-color: var(--secondary-clr);
+    padding: 1px 2px;
+    vertical-align: center;
+    text-align: center;
+}
+
+.mg-t-1{
+    margin-top: 1rem;
+}
