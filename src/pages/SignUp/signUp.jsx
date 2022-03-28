@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-import axios from 'axios';
 
 import { Header, Footer, Input } from '../../components';
 import { authBG } from '../../assets/images';
-
+import { useAuth } from '../../context/'
 
 import './signUp.css'
 
 function SignUp(){
+    
+    const [user, setUser] = useState({firstName:'',lastName:'',email:'',password:''})
+    const { signupHandler } = useAuth()
+
     return(
         <div>
             <Header />
@@ -17,13 +20,13 @@ function SignUp(){
                 <img className="auth-landing-img" src={authBG} alt="illustration of pets being together"/>
                 
                 <div>
-                <form className="flex-column glass-card login-form">
+                <form className="flex-column glass-card login-form" onSubmit={(e)=>signupHandler(e, user)}>
                     <div className="flex-column flex-center">
                         <h3 className='form-heading'>SignUp</h3>
-                        <Input type='text' name='firstName' placeholder='First Name'/>
-                        <Input type='text' name='lastName' placeholder='Last Name'/>
-                        <Input type='text' name='email' placeholder='Email'/>
-                        <Input type='password' name='password' placeholder='Password'/>
+                        <input type="text" placeholder="First Name" className='form-input mg-tb-1' onInput={(e)=>setUser({...user, firstName: e.target.value})} />
+                        <input type="text" placeholder="Last Name" className='form-input mg-tb-1' onInput={(e)=>setUser({...user, lastName: e.target.value})} />
+                        <input type="text" placeholder="Email" className='form-input mg-tb-1' onInput={(e)=>setUser({...user, email: e.target.value})} />
+                        <input type="password" placeholder="Password" className='form-input mg-tb-1' onInput={(e)=>setUser({...user, password: e.target.value})} />
                         <div className="flex-layout w-100 space-between">
                             <div className="flex-layout">
                                 <input id='terms' type="checkbox"/> 
