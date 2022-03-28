@@ -13,12 +13,13 @@ function Header(){
 
     function logOutHandler (){
         
+        const response = window.confirm('You are logging out. Choose "Ok" if you are sure.')
+        if (response) {
         setCartItems({type:'CLEAR_CART'})
         setWishList({type:'CLEAR_WISHLIST'})
         authDispatch({type:'LOG_OUT',payload:''})
-        window.confirm('You are logging out. Choose "Ok" if you are sure.') ?
         navigateTo("/")
-        : alert("Continuing with your session.")
+        }
         
     }
 
