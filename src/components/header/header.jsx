@@ -17,9 +17,9 @@ function Header(){
         setWishList({type:'CLEAR_WISHLIST'})
         authDispatch({type:'LOG_OUT',payload:''})
         window.confirm('You are logging out. Choose "Ok" if you are sure.') ?
-        alert('You have been logged out.')
-        : alert("Continuing with your session.")
         navigateTo("/")
+        : alert("Continuing with your session.")
+        
     }
 
     return(
