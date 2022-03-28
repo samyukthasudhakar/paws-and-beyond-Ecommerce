@@ -1,6 +1,7 @@
 .category-container{
     width:12rem;
     margin: 0 4rem;
+    cursor: pointer;
 }
 
 .category-img{

@@ -21,7 +21,7 @@ export const categories = [
     },
     {
         id : 4,
-        category : 'Fish',
+        category : 'Fishes',
         icon : fish,
         link : ''
     },

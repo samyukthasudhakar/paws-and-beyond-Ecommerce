@@ -1,5 +1,6 @@
+import { AuthProvider, useAuth } from './authContext'
+import { CartProvider, useCart } from './cartContext'
 import { ProductsProvider, useProducts } from './productsContext'
 import { WishListProvider, useWishList } from './wishListContext'
-import { CartProvider, useCart } from './cartContext'
 
-export { ProductsProvider, useProducts, WishListProvider, useWishList, CartProvider, useCart}
+export { AuthProvider, useAuth, CartProvider, useCart, ProductsProvider, useProducts, WishListProvider, useWishList, }

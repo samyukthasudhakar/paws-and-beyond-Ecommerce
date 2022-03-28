@@ -5,12 +5,12 @@ import { useWishList, useCart } from '../../../context'
 
 function CartCard({product}){
     const { image, discount, name, price, cartCount, description } = product
-    const { wishList, setWishList } = useWishList()
+    const { wishList, toggleWishList } = useWishList()
     const { setCartItems } = useCart()
     let totalPrice = discount ? (price-((price*discount)/100))*cartCount : (price*cartCount)
 
     function moveToWishList(product){
-        setWishList({type:'TOGGLE_WISHLIST',payload:product})
+        toggleWishList(product)
         setCartItems({type:'REMOVE_FROM_CART',payload:product})
     }
 
