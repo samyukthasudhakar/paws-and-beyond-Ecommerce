@@ -9,7 +9,7 @@ import { CartCard } from './card/cartCard/cartCard'
 import { Section } from './section/section'
 import { EmptySection } from './empty_section/emptySection'
 import { FilterSideBar } from './filterSideBar/filterSideBar'
-
+import { PrivateRoute } from './privateRoute'
 export { 
     Categories, 
     Footer, 
@@ -21,5 +21,6 @@ export {
     CartCard, 
     Section,
     EmptySection, 
-    FilterSideBar
+    FilterSideBar,
+    PrivateRoute
 }
