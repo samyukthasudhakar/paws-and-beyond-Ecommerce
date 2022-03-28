@@ -7,7 +7,10 @@ function WishListReducer(state, action){
             }else{
                 return [...state.filter(item => item._id!=action.payload._id)]
             }
-    }}
+        }
+        case 'CLEAR_WISHLIST':
+            return []
+    }
 }
 
 export { WishListReducer }

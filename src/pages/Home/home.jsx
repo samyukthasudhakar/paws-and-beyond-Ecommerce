@@ -13,8 +13,8 @@ function HomePage(){
             <Categories />
             <Section heading={"Today's Deals"}/>
             <Section heading={"Treding Products"}/>
-            <Footer />
             </div>
+            <Footer />
         </div>
     );
     

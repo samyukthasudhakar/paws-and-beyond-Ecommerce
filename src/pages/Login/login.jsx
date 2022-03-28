@@ -1,18 +1,19 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import { Link } from "react-router-dom";
 
-import { Header, Footer, Input } from '../../components';
+import { Header, Footer } from '../../components';
 import { authBG } from '../../assets/images';
 import { useAuth } from '../../context/'
+import useScrollToTop from '../../utils/scrollToTop'
 
 import './login.css'
-
-
 
 function Login(){
     const [user, setUser] = useState({email:'',password:''})
     const { loginHandler } = useAuth()
     
+    useScrollToTop()
+
     return(
         <div>
             <Header />
@@ -31,11 +32,11 @@ function Login(){
                                 <input id='remember-me' type="checkbox"/> 
                                 <label for='remember-me' className="fs-13px">Remember me</label>
                             </div>
-                            <Link className="link-txt" to="*">Forgot Password ?</Link>    
+                            <Link className="link-txt" to="*">Forgot Password ?</Link>      
                         </div>
                         <div className="mg-1 w-100">
                         <button className="auth-btn">Login</button>
-                        <button className="auth-btn-secondary" onClick={(e)=>loginHandler(e,{email:'sam',password:'test123'})}>Login as Guest</button>
+                        <button className="auth-btn-secondary" onClick={(e)=>loginHandler(e,{email:'johndoe@gmail.com',password:'john123'})}>Login as Guest</button>
                         </div>
                         <Link className="link-txt" to="/signup">Create New Account</Link>
                     </div>
