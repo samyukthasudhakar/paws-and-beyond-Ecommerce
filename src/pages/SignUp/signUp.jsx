@@ -4,10 +4,13 @@ import { Link } from "react-router-dom";
 import { Header, Footer, Input } from '../../components';
 import { authBG } from '../../assets/images';
 import { useAuth } from '../../context/'
+import useDocumentTitle from '../../utils/hooks/useDocumentTitle';
 
 import './signUp.css'
 
 function SignUp(){
+    
+    useDocumentTitle('Paws & Beyond | SignUp')
     
     const [user, setUser] = useState({firstName:'',lastName:'',email:'',password:''})
     const { signupHandler } = useAuth()

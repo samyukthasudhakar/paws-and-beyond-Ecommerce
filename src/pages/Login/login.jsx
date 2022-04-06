@@ -4,11 +4,14 @@ import { Link } from "react-router-dom";
 import { Header, Footer } from '../../components';
 import { authBG } from '../../assets/images';
 import { useAuth } from '../../context/'
-import useScrollToTop from '../../utils/scrollToTop'
-
+import useScrollToTop from '../../utils/hooks/scrollToTop'
+import useDocumentTitle from '../../utils/hooks/useDocumentTitle'
 import './login.css'
 
 function Login(){
+
+    useDocumentTitle('Paws & Beyond | Login')
+
     const [user, setUser] = useState({email:'',password:''})
     const { loginHandler } = useAuth()
     
