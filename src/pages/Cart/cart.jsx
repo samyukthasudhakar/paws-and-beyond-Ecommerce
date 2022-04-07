@@ -13,8 +13,8 @@ function CartPage(){
 
     const { cartItems, setCartItems } = useCart()
     let cartProductsCount = cartItems.length
-    let totalAmount = cartItems ? cartItems.reduce((acc, curr) => acc + curr.price * curr.cartCount, 0) : 0;
-    let discountAmount = cartItems ? cartItems.reduce((acc, curr) => acc + ((curr.price * curr.discount)/100)*curr.cartCount, 0) : 0;
+    let totalAmount = cartItems ? cartItems.reduce((acc, curr) => acc + curr.price * curr.qty, 0) : 0;
+    let discountAmount = cartItems ? cartItems.reduce((acc, curr) => acc + ((curr.price * curr.discount)/100)*curr.qty, 0) : 0;
     let convenienceFee = 100
 
     useScrollToTop()

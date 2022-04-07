@@ -4,14 +4,14 @@ import './cartCard.css'
 import { useWishList, useCart } from '../../../context'
 
 function CartCard({product}){
-    const { image, discount, name, price, cartCount, description } = product
+    const { image, discount, name, price, qty, description } = product
     const { wishList, toggleWishList } = useWishList()
-    const { setCartItems } = useCart()
-    let totalPrice = discount ? (price-((price*discount)/100))*cartCount : (price*cartCount)
+    const { removeFromBag, updateBag } = useCart()
+    let totalPrice = discount ? (price-((price*discount)/100))*qty : (price*qty)
 
     function moveToWishList(product){
         toggleWishList(product)
-        setCartItems({type:'REMOVE_FROM_CART',payload:product})
+        removeFromBag(product)
     }
 
     return(
@@ -44,9 +44,9 @@ function CartCard({product}){
             <div className="flex-column flex-center" style={{width:'15rem', justifyContent:'space-around',padding:'3rem 0 0 0'}}>
                 <div className='flex-layout space-between' style={{width:'15rem'}}>
                     <div>
-                        <button className="qty-btn" onClick={()=>setCartItems({type:'DECREMENT_PRODUCT_COUNT',payload:product})}>-</button>
-                        <span className="mg-rl-1 qty-value">{cartCount}</span>
-                        <button className="qty-btn" onClick={()=>setCartItems({type:'INCREMENT_PRODUCT_COUNT',payload:product})}>+</button>
+                        <button className="qty-btn" onClick={()=>updateBag("decrement", product)}>-</button>
+                        <span className="mg-rl-1 qty-value">{qty}</span>
+                        <button className="qty-btn" onClick={()=>updateBag("increment", product)}>+</button>
                     </div>
                     <div className="cart-total-price flex-center txt-bold"> {totalPrice} </div>
                 </div>
@@ -55,7 +55,7 @@ function CartCard({product}){
                 }
             </div>
             <div className="flex-layout">
-                <button className="cart-card-dismiss" onClick={()=>setCartItems({type:'REMOVE_FROM_CART',payload:product})}><i className="fa fa-times"></i></button>
+                <button className="cart-card-dismiss" onClick={()=>removeFromBag(product)}><i className="fa fa-times"></i></button>
             </div>
             </div>
         </div>
