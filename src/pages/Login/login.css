@@ -35,6 +35,7 @@
     padding:7px;
     border:none;
     border-radius:4px;
+    background-color: var(--clr-white);
 }
 
 .form-password{
@@ -42,6 +43,7 @@
     padding: 0;
     margin: 0;
     width: 95%;
+    background-color: transparent;
 }
 
 .link-txt:hover{
