@@ -19,7 +19,7 @@ function AuthProvider( {children}){
             password: user.password,
           });
           authDispatch({type:'LOG_IN',payload:{email: user.email,token:response.data.encodedToken}})
-          navigateTo('/')
+          navigateTo(-1)
         } catch (error) {
           alert("Please enter valid email and password.")
         }
@@ -35,7 +35,7 @@ function AuthProvider( {children}){
             password: user.password,
           });
           authDispatch({type:'LOG_IN',payload:{email: user.email,token:response.data.encodedToken}})
-          navigateTo("/")
+          navigateTo(-1)
         }catch (error) {
           console.log(error);
         }
