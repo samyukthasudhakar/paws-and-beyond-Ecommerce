@@ -6,7 +6,7 @@ import {  bag, heart, home, pbLogo, user  } from '../../assets/icons'
 import { useWishList, useCart, useAuth } from '../../context'
 
 function Header(){
-    const { wishList, setWishList } = useWishList()
+    const { wishList, wishListDispatch } = useWishList()
     const { cartItems, setCartItems } = useCart()
     const { authState:{isLoggedIn}, authDispatch } = useAuth()
     const navigateTo = useNavigate()
@@ -15,10 +15,10 @@ function Header(){
         
         const response = window.confirm('You are logging out. Choose "Ok" if you are sure.')
         if (response) {
-        setCartItems({type:'CLEAR_CART'})
-        setWishList({type:'CLEAR_WISHLIST'})
-        authDispatch({type:'LOG_OUT',payload:''})
-        navigateTo("/")
+            setCartItems({type:'CLEAR_CART'})
+            wishListDispatch({type:'CLEAR_WISHLIST'})
+            authDispatch({type:'LOG_OUT',payload:''})
+            navigateTo("/")
         }
         
     }
