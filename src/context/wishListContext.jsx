@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { WishListReducer } from '../../src/reducers/wishlistReducer';
 import { useAuth } from './authContext'
 import checkIfPresent from '../utils/checkIfPresent'
-import { ADD_TO_WISHLIST, DELETE_FROM_WISHLIST } from '../utils/constants/apiEndPoints'
+import { WISHLIST_PATH } from '../utils/constants/apiEndPoints'
 import axios from 'axios'
 
 const wishListContext = createContext(null);
@@ -16,7 +16,7 @@ function WishListProvider( { children } ){
 
     const addToWishList = async (item) => {
         try{
-            const response = await axios.post(ADD_TO_WISHLIST, 
+            const response = await axios.post(WISHLIST_PATH, 
             {
                 product: item
             },
@@ -33,7 +33,7 @@ function WishListProvider( { children } ){
 
     const deleteFromWishList = async (product) => {
         try{
-            const response = await axios.delete(`${DELETE_FROM_WISHLIST}${product._id}`,
+            const response = await axios.delete(`${WISHLIST_PATH}/${product._id}`,
             {
                 headers: {
                     authorization: token,
