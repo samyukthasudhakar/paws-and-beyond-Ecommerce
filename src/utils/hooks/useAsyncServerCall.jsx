@@ -6,7 +6,8 @@ export function useAsyncServerCall(api_path, dispatch, actionType){
         (async() => {
             try{
                 const response = await axios.get(api_path)
-                dispatch({type: actionType, payload: response.data.products})
+                const dataName = actionType.split('_')[1].toLowerCase()
+                dispatch({type: actionType, payload: response.data[dataName]})
             }
             catch (error){
                 console.log(error)

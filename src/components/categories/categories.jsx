@@ -1,14 +1,16 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import { useProducts } from '../../context';
+import {useAsyncServerCall} from '../../utils/hooks/useAsyncServerCall'
 import './categories.css'
-import { categories } from '../../data/categories'
+import { GET_CATEGORIES } from '../../utils/constants/apiEndPoints'
 
 function Categories(){
 
+    const { data:{ categories }, productsDispatch } = useProducts()
+    useAsyncServerCall(GET_CATEGORIES, productsDispatch, 'GET_CATEGORIES')
+
     const navigateTo = useNavigate()
-    const { productsDispatch } = useProducts()
 
     const CategoryClickHandler = category => {
         productsDispatch({type:'CLEAR_ALL_FILTERS',payload:null})
@@ -24,7 +26,7 @@ function Categories(){
                     categories.map( ({icon, category}) => (
                         <div className="category-container flex-column flex-center" style={{width: '10rem'}} onClick={() => CategoryClickHandler(category)}>
                             <img className="category-img" src= {icon}
-                                alt="dog icon"/>
+                                alt="category icon"/>
                                 <span className="txt-bold">{category}</span>
                         </div>
                     ))
