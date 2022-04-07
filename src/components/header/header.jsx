@@ -59,7 +59,6 @@ function Header(){
                         ):(<img className="nav-pill-img" src={ bag } alt="bag icon"/>)
                     }  
                 </Link>
-                {console.log('isLoggedIn',isLoggedIn)}
                 {
                 !isLoggedIn ? 
                 <Link to="/login" className="nav-pill" ><img className="nav-pill-img" src={ user } alt="user icon"/></Link>
