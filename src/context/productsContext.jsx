@@ -7,6 +7,7 @@ function ProductsProvider({ children }){
 
     const [data, productsDispatch] = useReducer(ProductsReducer,{
         products: [],
+        categories: [],
         sortByPrice: '',
         categoryFilters: [],
         typeFilters: [],

@@ -4,14 +4,17 @@ import './cart.css'
 import { Header, Footer, CartCard, EmptySection } from '../../components'
 import { emptyBag } from '../../assets/images';
 import { useCart } from '../../context'
-import useScrollToTop from '../../utils/scrollToTop'
+import useScrollToTop from '../../utils/hooks/scrollToTop'
+import useDocumentTitle from '../../utils/hooks/useDocumentTitle'
 
 function CartPage(){
     
+    useDocumentTitle('Paws & Beyond | Cart')
+
     const { cartItems, setCartItems } = useCart()
     let cartProductsCount = cartItems.length
-    let totalAmount = cartItems ? cartItems.reduce((acc, curr) => acc + curr.price * curr.cartCount, 0) : 0;
-    let discountAmount = cartItems ? cartItems.reduce((acc, curr) => acc + ((curr.price * curr.discount)/100)*curr.cartCount, 0) : 0;
+    let totalAmount = cartItems ? cartItems.reduce((acc, curr) => acc + curr.price * curr.qty, 0) : 0;
+    let discountAmount = cartItems ? cartItems.reduce((acc, curr) => acc + ((curr.price * curr.discount)/100)*curr.qty, 0) : 0;
     let convenienceFee = 100
 
     useScrollToTop()

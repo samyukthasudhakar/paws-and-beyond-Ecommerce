@@ -1,20 +1,22 @@
 import React, { useEffect } from 'react';
 import { Header, Footer, ProductCard, FilterSideBar } from '../../components/'
 import { useProducts } from '../../context/productsContext'
-import useScrollToTop from '../../utils/scrollToTop'
+import useScrollToTop from '../../utils/hooks/scrollToTop'
 import getFilteredProducts from '../../utils/filterFunctions'
 import {useAsyncServerCall} from '../../utils/hooks/useAsyncServerCall'
 import {GET_PRODUCTS} from '../../utils/constants/apiEndPoints'
-
+import useDocumentTitle from '../../utils/hooks/useDocumentTitle'
 import './productListing.css'
 
 
 function ProductListing(){
+
+    useDocumentTitle('Paws & Beyond | Prodcuts')
+    useScrollToTop()
+
     let {data:{ products, sortByPrice, categoryFilters, typeFilters, ratingFilter }, productsDispatch} = useProducts()
 
     useAsyncServerCall(GET_PRODUCTS, productsDispatch, 'GET_PRODUCTS')
-    
-    useScrollToTop()
     
     const filteredProducts = getFilteredProducts( products, sortByPrice, categoryFilters, typeFilters, ratingFilter )
     return(

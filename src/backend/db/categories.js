@@ -24,12 +24,12 @@ export const categories = [
   },
   {
     _id: uuid(),
-    category: "Fish",
+    category: "Fishes",
     icon: fish
   },
   {
     _id: uuid(),
-    category: "Bunny",
+    category: "Bunnies",
     icon: bunny
   },
 ];

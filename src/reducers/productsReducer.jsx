@@ -2,6 +2,8 @@ export function ProductsReducer(state, action){
     switch(action.type){
         case 'GET_PRODUCTS':
             return {...state, products: action.payload}
+        case 'GET_CATEGORIES':
+            return {...state, categories: action.payload}
         case 'SET_SORT_BY_PRICE':
             return {...state, sortByPrice: action.payload}
         case 'SET_FILTER_BY_CATEGORY':
