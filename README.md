@@ -54,16 +54,24 @@
 ## 💻Screens
 
 ### Home Page
+![home](https://github.com/samyukthasudhakar/paws-and-beyond-Ecommerce/blob/documentation/src/assets/readmeSnippets/home-1.PNG)
+![home categories](https://github.com/samyukthasudhakar/paws-and-beyond-Ecommerce/blob/documentation/src/assets/readmeSnippets/home-2.PNG)
 
 ### Products Page
+![products](https://github.com/samyukthasudhakar/paws-and-beyond-Ecommerce/blob/documentation/src/assets/readmeSnippets/products.PNG)
 
 ### Wishlist Page
+![wishlist](https://github.com/samyukthasudhakar/paws-and-beyond-Ecommerce/blob/documentation/src/assets/readmeSnippets/wishlist.PNG)
 
 ### Cart Page
+![cart](https://github.com/samyukthasudhakar/paws-and-beyond-Ecommerce/blob/documentation/src/assets/readmeSnippets/cart.PNG)
 
 ### Login Page
+![login](https://github.com/samyukthasudhakar/paws-and-beyond-Ecommerce/blob/documentation/src/assets/readmeSnippets/login.PNG)
 
 ### SignUp Page
+![signup](https://github.com/samyukthasudhakar/paws-and-beyond-Ecommerce/blob/documentation/src/assets/readmeSnippets/signup.PNG)
+
 
 ## 🧩Steps to run app
 
