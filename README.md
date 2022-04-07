@@ -14,7 +14,7 @@
 - [Connect With Me](#connect-with-me)
 
 ## 🧶Introduction
-[paws & beyond.](https://paws-n-beyond.netlify.app/) is an e-commerce application focused on selling wide range of pet prodcuts. It has all the P0 features required for a functional ecommerce sit and is to be added with more features in the coming days.
+[paws & beyond.](https://paws-n-beyond.netlify.app/) is an e-commerce application focused on selling wide range of pet products. It has all the P0 features required for a functional ecommerce sit and is to be added with more features in the coming days.
 
 ## 🔧Specifications
 
