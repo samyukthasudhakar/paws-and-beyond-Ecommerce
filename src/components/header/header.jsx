@@ -59,8 +59,7 @@ function Header(){
                         ):(<img className="nav-pill-img" src={ bag } alt="bag icon"/>)
                     }  
                 </Link>
-                {
-                !isLoggedIn ? 
+                {!isLoggedIn ? 
                 <Link to="/login" className="nav-pill" ><img className="nav-pill-img" src={ user } alt="user icon"/></Link>
                 :<button class="nav-pill" style={{backgroundColor:'transparent', border:'none'}} title="LogOut" onClick={logOutHandler}><img className="nav-pill-img" src={ user } alt="user icon"/></button>
                 }     
